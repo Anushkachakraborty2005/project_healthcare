@@ -1,0 +1,165 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Dark background */
+    color: #EEE; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+nav {
+    background-color: #1E1E1E;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #BB86FC; /* Neon purple text color */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #03DAC6; /* Teal text color */
+}
+
+header {
+    background: url('healthcare_ai_image.jpg') no-repeat center center/cover;
+    color: #EEE;
+    text-align: center;
+    padding: 5em 0;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+header .container {
+    background-color: rgba(18, 18, 18, 0.8); /* Semi-transparent dark background */
+    padding: 2em;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #BB86FC; /* Neon purple accent */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #03DAC6; /* Teal accent */
+}
+
+.home-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 8px; /* Optional: Adding rounded corners */
+}
+
+#about, #applications, #benefits, #signup {
+    padding: 2em 0;
+    background-color: #1E1E1E; /* Dark background for sections */
+    margin: 1em auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: slideUp 1s ease-in-out; /* Slide-up animation */
+}
+
+#about .container, #applications .container, #benefits .container, #signup .container {
+    padding: 2em;
+}
+
+h2 {
+    color: #BB86FC; /* Neon purple accent */
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5em 0;
+    font-size: 1.1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 0.5em 0;
+}
+
+input {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #BB86FC; /* Border accent color */
+    border-radius: 5px;
+    background-color: #2C2C2C;
+    color: #EEE;
+}
+
+button {
+    background-color: #BB86FC;
+    color: #121212;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3700B3;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #1E1E1E;
+    color: #EEE;
+    width: 100%;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
